@@ -61,7 +61,7 @@
       </nav>
 
       <div class="nav-actions">
-        <button id="themeToggle">🌙</button>
+        <button id="themeToggle">☀️</button>
         <button class="menu-toggle" id="menuToggle">☰</button>
       </div>
 
@@ -259,34 +259,61 @@
   </section>
 
   <!-- Contact -->
-  <section class="contact section" id="contact">
+<section class="contact section" id="contact">
 
-    <div class="container">
+  <div class="container">
 
-      <div class="section-title reveal">
-        <h2>Fale Conosco</h2>
-      </div>
-
-      <form id="contactForm">
-
-        <!-- Honeypot -->
-        <input type="text" name="website" class="hidden">
-
-        <input type="text" id="name" placeholder="Nome" required>
-        <input type="tel" id="phone" placeholder="Telefone" required>
-        <input type="email" id="email" placeholder="Email" required>
-
-        <textarea id="message" placeholder="Mensagem"></textarea>
-
-        <button type="submit" class="btn-primary">
-          Enviar
-        </button>
-
-      </form>
-
+    <div class="section-title reveal">
+      <h2>Fale Conosco</h2>
+      <p>
+        Entre em contato agora e receba uma proposta personalizada.
+      </p>
     </div>
 
-  </section>
+    <form id="contactForm" class="modern-form">
+
+      <!-- Honeypot -->
+      <input type="text" name="website" class="hidden">
+
+      <div class="form-grid">
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Seu nome"
+          required
+        >
+
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Telefone"
+          required
+        >
+
+      </div>
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Seu e-mail"
+        required
+      >
+
+      <textarea
+        id="message"
+        placeholder="Conte um pouco sobre seu projeto"
+      ></textarea>
+
+      <button type="submit" class="btn-primary form-btn">
+        Enviar Mensagem
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
 
   <!-- CTA -->
   <section class="cta section">
