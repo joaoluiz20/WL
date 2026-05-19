@@ -1,5 +1,5 @@
 const SITE_CONFIG = {
-  companyName: "Empresa João",
+  companyName: "Next Level",
   phone: "(15) 99149-2155",
   whatsapp: "5515991492155",
   email: "contato@empresa.com",
