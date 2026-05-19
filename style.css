@@ -187,9 +187,102 @@ body {
   display: block;
 }
 
+.faq-question {
+
+  width: 100%;
+
+  padding: 20px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background: white;
+
+  color: var(--dark);
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.05);
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;   
+}
+
+.faq-question:hover {
+
+  transform: translateY(-3px);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary),
+      var(--secondary)
+    );
+
+  color: white;
+
+}
+
+.faq-item {
+
+  margin-bottom: 20px;
+
+}
+
 .faq-answer {
-  display: none;
-  padding: 10px 0;
+
+  max-height: 0;
+
+  overflow: hidden;
+
+  transition:
+    max-height 0.4s ease,
+    padding 0.3s ease;
+
+  padding: 0 20px;
+
+  background:
+    rgba(255,255,255,0.7);
+
+  border-radius:
+    0 0 16px 16px;
+
+}
+.faq-question::after {
+
+  content: "+";
+
+  font-size: 1.5rem;
+
+  transition: .3s;
+
+}
+
+.faq-item.active .faq-question::after {
+
+  transform: rotate(45deg);
+
+}
+
+.faq-item.active .faq-answer {
+
+  max-height: 200px;
+
+  padding: 20px;
+
 }
 
 .footer {

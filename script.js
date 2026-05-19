@@ -86,20 +86,19 @@ window.addEventListener("load", revealElements);
 
 /* FAQ */
 
-const faqQuestions =
-  document.querySelectorAll(".faq-question");
+/* FAQ Accordion */
 
-faqQuestions.forEach(question => {
+const faqItems =
+  document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+
+  const question =
+    item.querySelector(".faq-question");
 
   question.addEventListener("click", () => {
 
-    const answer =
-      question.nextElementSibling;
-
-    answer.style.display =
-      answer.style.display === "block"
-      ? "none"
-      : "block";
+    item.classList.toggle("active");
 
   });
 
