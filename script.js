@@ -57,10 +57,12 @@ menuToggle.addEventListener("click", () => {
 
 /* Reveal Animation */
 
+/* Reveal Animation */
+
 const reveals =
   document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
+function revealElements(){
 
   reveals.forEach(el => {
 
@@ -68,12 +70,19 @@ window.addEventListener("scroll", () => {
       el.getBoundingClientRect().top;
 
     if(top < window.innerHeight - 100){
+
       el.classList.add("active");
+
     }
 
   });
 
-});
+}
+
+window.addEventListener("scroll", revealElements);
+
+/* Executa ao carregar */
+window.addEventListener("load", revealElements);
 
 /* FAQ */
 
